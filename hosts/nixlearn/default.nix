@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 {
-  imports = [./hardware-configuration.nix];
+  imports = [
+    ./hardware-configuration.nix
+    ../../modules/nixos/core.nix
+    ../../modules/nixos/users.nix
+  ];
 
   boot.loader = {
     efi.canTouchEfiVariables = true;
