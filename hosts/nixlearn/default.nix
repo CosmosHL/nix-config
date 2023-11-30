@@ -17,7 +17,7 @@
   nix.settings = {
     trusted-users = ["ozoku"];
     experimental-features = ["nix-command" "flakes"];
-    auto-optimize-store = true;
+    auto-optimise-store = true;
   };
 
   time.timeZone = "Europe/Helsinki";
@@ -55,7 +55,7 @@
   users.groups.ozoku = {};
 
   users.users.ozoku = {
-    hashedPassword = "";
+    hashedPassword = "$6$uUwY2r72hiQKd0dN$6mnZKe1b6i9GqZ2EVXRcXUH/wVQnofrm6jGpxSEHjyde5ONYamih5I1TYdtNFBb.S/VSdOTQ.fe/iTrRD1XaU0";
     home = "/home/ozoku";
     isNormalUser = true;
     extraGroups = [
