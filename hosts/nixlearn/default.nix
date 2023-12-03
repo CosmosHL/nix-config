@@ -7,9 +7,16 @@
     ../../modules/nixos/desktop.nix
   ];
 
-  boot.loader = {
-    efi.canTouchEfiVariables = true;
-    systemd-boot.enable = true;
+  # UEFI Boot
+  # boot.loader = {
+    # efi.canTouchEfiVariables = true;
+    # systemd-boot.enable = true;
+  # };
+
+  # BIOS Boot
+  boot.loader.grub = {
+    enable = true;
+    device = "/dev/vda1";
   };
 
   networking = {
