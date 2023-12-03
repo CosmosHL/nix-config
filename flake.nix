@@ -16,7 +16,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.ozoku = import ./home/nixlearn.nix
+            home-manager.users.ozoku = import ./home/nixlearn.nix;
           }
         ];
       };
