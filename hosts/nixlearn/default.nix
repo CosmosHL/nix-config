@@ -16,7 +16,7 @@
   # BIOS Boot
   boot.loader.grub = {
     enable = true;
-    device = "/dev/vda1";
+    device = "/dev/vda";
   };
 
   networking = {
